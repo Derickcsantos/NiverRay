@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,13 +7,16 @@ body {
 
 .titulo{
     text-align: center;
+    background-color: #e2a2a4;
+    color: #fff;
     border-bottom: 1px solid #e2a2a4;
     width: 100%;
 }
 
 .introducao{
     text-align: center;
-    margin: 5px;    
+    margin: 40px 50px 15px 50px; 
+
 }
 
 .container {

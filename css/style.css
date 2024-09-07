@@ -24,6 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    border-radius: 100px;
 }
 
 .box {
@@ -74,11 +75,15 @@ body {
 }
 
 .box button:hover {
-    background-color: #45a049;
+    background-color: #cf8083;
 }
 
 .box button i{
     margin: 0 0 0 5px;
+}
+
+.teste{
+    width: 300px;
 }
 
 footer{

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Area admin</h1>
+            <i onclick="toggleSidebar()" class="fa-solid fa-bars"></i>
+            <div class="sidebar" id="sidebar">
+                <h2>Menu</h2>
+                <i onclick="toggleSidebar()" class="fa-solid fa-xmark"></i>
+                <p style="margin-top:50px ;"><a href="index.html"> Informações </a></p>
+                <p><a href="index.html">Ir para o site</a></p>
+                <p class="marketing"><a class="marketIcon" href="https://github.com/Derickcsantos">Sobre mim</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="addProduto">
+            <h3>Adicionar produto</h3>
+            <label class="buttonCustom" for="text">Adicionar imagem:</label>
+            <input id="addArquivo" class="arquivo" type="file" accept="image/*" placeholder="Coloque o arquivo aqui" />
+            <label for="text">Adicionar URL:</label>
+            <input type="url" placeholder="Digite uma URL" />
+            <button class="addBtn">Adicionar produto</button>
+        </div>
+        <div class="definirCor">
+            <h3>Definir cor</h3>
+            <label for="color-picker">Escolha uma cor:</label>
+            <input type="color" id="color-picker" value="#ff0000" />
+            <input type="submit" value="Enviar">
+        </div>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

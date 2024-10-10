@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    color: #000;
+    padding: 30px;
+}
+
+label{
+    /* display: flex;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 0 20px; */
+    margin: 0 10px 0 15px; /* Espaçamento à direita do label */
+    font-size: 15px;
+}
+
+.log{
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid #818181;
+    height: 45px;
+    width: 80%;
+    margin: 3%;
+}
+
+input[type="color"], 
+.buttonCustom {
+    border: none; /* Remove a borda padrão */
+    width: 30%; /* Define uma largura fixa */
+    height: 40px; /* Define uma altura fixa */
+    cursor: pointer; 
+}
+
+input::placeholder{
+    padding: 5px;
+}
+
+button{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    border: 1px solid #818181;
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+a{
+    color: #000;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+i {
+    position: absolute;
+    top: 5.5%;
+    left: 10%;
+    font-size: 24px;
+}
+
+.addProduto,
+.definirCor{
+    background-color: #fff;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin: 30px 6px 0 6px;
+}
+
+.definirCor{
+    height: 150px;
+}
+
+h3{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.arquivo{
+    width: 200px;
+    padding: 10px;
+    height: 40px;
+    color: #fff;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.addBtn{
+    position: absolute;
+    top: 29%;
+    left: 37%;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+
+input[type="submit"]{
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 49%;
+    left: 37%;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.sidebar {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    left: -350px;
+    top: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: left 0.3s;
+    padding: 20px;
+    z-index: 999;
+}
+
+.sidebar h2{
+    text-align: center;
+}
+
+.sidebar p{
+    font-size: 18px;
+    color: red;
+    padding: 10px;
+    text-decoration:underline;
+    transition: 0.5s ease;
+}
+
+.sidebar .marketing{
+    position: absolute;
+    top: 95%;
+    left: 4;
+    color: #cfcfcf;
+    background-color: #f5f5f5;
+}
+.sidebar .marketIcon{
+    color: #333
+}
+
+.sidebar i{
+    color: red;
+    position: absolute;
+    top: 2%;
+    left: 88%;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+
+
+.toggle-button {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px;
+}
